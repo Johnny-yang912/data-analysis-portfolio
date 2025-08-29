@@ -77,8 +77,10 @@
 ### 安裝需求
 ```bash
 pip install -r requirements.txt
+```
 
 ### 使用範例
+```
 from utils_churn import load_and_clean, split_xy, train_and_eval
 
 # 讀取與清理
@@ -93,9 +95,14 @@ print(res["metrics"])
 res = train_and_eval(X, y, model="rf", tune=True, n_iter=20)
 print(res["metrics"])
 
+```
+
 ### 範例輸出
+```
 最佳參數: {'clf__n_estimators': 500, 'clf__min_samples_split': 2, 'clf__max_depth': None}
 {'accuracy': 0.7977, 'precision': 0.678, 'recall': 0.454, 'f1': 0.544, 'roc_auc': 0.845, ...}
+
+```
 
 ## 附件
 -[使用範例](./test.ipynb)   

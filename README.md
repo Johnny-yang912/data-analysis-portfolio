@@ -105,10 +105,10 @@ print(res["metrics"])
 
 ```
 
-## 附件
-🔧 工具包 [./utils_stock.py](./utils_stock.py) 
-
--🔎[使用範例](./test.ipynb)   
+### 附件
+🔧 工具包 [./utils_churn.py](./utils_churn.py)  
+🔎 使用範例 [./test.ipynb](./test.ipynb)
+  
 ---
 
 ## 🙋‍♂️ 作者說明

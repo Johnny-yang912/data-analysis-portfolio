@@ -81,9 +81,15 @@ pip install -r requirements.txt
 ### 使用範例
 from utils_churn import load_and_clean, split_xy, train_and_eval
 
+# 讀取與清理
 df = load_and_clean("telco_churn_with_all_feedback.csv")
 X, y = split_xy(df, "Churn")
 
+# Baseline 模型
+res = train_and_eval(X, y, model="rf")
+print(res["metrics"])
+
+# 自動調參（RandomizedSearchCV）
 res = train_and_eval(X, y, model="rf", tune=True, n_iter=20)
 print(res["metrics"])
 

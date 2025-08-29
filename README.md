@@ -106,7 +106,8 @@ print(res["metrics"])
 ```
 
 ## 附件
--[使用範例](./test.ipynb)   
+🔧 工具包 [./utils_stock.py](./utils_stock.py)
+-🔎[使用範例](./test.ipynb)   
 ---
 
 ## 🙋‍♂️ 作者說明
